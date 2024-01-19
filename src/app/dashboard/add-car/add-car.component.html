@@ -1,0 +1,31 @@
+<div class="mt-5 mb-5">
+    <h1 class="text-center">Add New Notifications</h1>
+    <form [formGroup]="addform" (ngSubmit)="addCar()" action="" class="container w-50 mt-3 shadow-lg p-5">
+        <div class="mt-4">
+            <input formControlName="jobName" id="u1" name="jname" type="text" placeholder="Job Position" class="form-control">
+        </div>
+        <div class="mt-4">
+            <input formControlName="qualification" id="u1" name="quali" type="text" placeholder="Qualification" class="form-control">
+        </div>
+        <div class="mt-4">
+            <input formControlName="experience" id="e1" name="exp" type="text" placeholder="Experience" class="form-control">
+        </div>
+        <div class="mt-4">
+            <input formControlName="location" id="e1" name="loca" type="text" placeholder="Location" class="form-control">
+        </div>
+        <div class="mt-4">
+            <input formControlName="salary" id="e1" name="ctc" type="text" placeholder="CTC" class="form-control">
+        </div>
+        <div class="mt-5">
+            <label for="">Notification Status</label>
+            <select formControlName="status" name="sts" id="s1" class="form-control mt-2">
+                <option class="disabled" value="">Select status</option>
+                <option value="1">Activate</option>
+                <option value="0">Deactivate</option>
+            </select>
+        </div>
+        <div class="mt-3 text-center">
+            <button type="submit" class="btn btn-success w-25">Add</button>
+        </div>
+    </form>
+</div>

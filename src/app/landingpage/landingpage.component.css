@@ -1,0 +1,18 @@
+.car-img {
+    height: 800px;
+}
+
+.anim-logo {
+    transition: width 2s, height 4s ease-in-out;
+}
+
+.anim-logo-div:hover .anim-logo {
+    width: 600px;
+    height: 500px;
+}
+
+.card{
+    height: fit-content;
+    width: 100px;
+}
+

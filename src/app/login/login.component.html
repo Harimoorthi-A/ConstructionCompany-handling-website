@@ -1,0 +1,18 @@
+<div class="login-page">
+    <div class="row container w-50 login-space shadow-lg">
+        <h1 class="text-danger text-center pt-3">For Admin only</h1>
+        <form [formGroup]="loginForm" action="">
+            <div class="form-floating">
+                <input  formControlName="email" name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label class="text-dark" for="floatingInput">Email address</label>    
+            </div>
+            <div class="form-floating mt-5">
+                <input formControlName="password" name="psw" type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label class="text-dark" for="floatingInput">Password</label>    
+            </div>
+            <div class="mt-5 text-center">
+                <button (click)="login()" class="btn btn-warning">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

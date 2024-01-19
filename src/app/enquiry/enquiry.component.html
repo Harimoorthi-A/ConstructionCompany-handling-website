@@ -1,0 +1,31 @@
+<div class="enquiry-page">
+    <div class="enquiry-space">
+        <form action="" class="p-3" [formGroup]="enqform" (ngSubmit)="addEnquiry()">
+            <div class="form-floating">
+                <input formControlName="name" name="Name" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label class="text-dark" for="floatingInput">Enter Name</label>
+            </div>
+            <div class="form-floating mt-2">
+                <input formControlName="email" name="mail" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label class="text-dark" for="floatingInput">Enter Email</label>
+            </div>
+            <div class="form-floating mt-2">
+                <input formControlName="phonenumber" name="number" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label class="text-dark" for="floatingInput">Enter phone number</label>
+            </div>
+            <div class="form-floating mt-2">
+                <input formControlName="projectInterested" name="proInt" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label class="text-dark" for="floatingInput">Project interested</label>
+            </div>
+            <div class="form-floating mt-2">
+                <textarea formControlName="comments" name="cmt" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <div class="text-center mt-2">
+                <button type="submit" class="btn btn-info">Enquiry</button>
+            </div>
+        </form>
+
+    </div>
+</div>

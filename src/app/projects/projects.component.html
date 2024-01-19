@@ -1,0 +1,17 @@
+<div class="mt-5">
+    <div *ngFor="let i of allprojects" id="c1" class="card mt-5" style="width: 50%;" >
+        <img [src]="i.projectImage" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-danger">{{i.projectName}}</h5>
+            <p class="card-text">
+                <i class="fa-solid fa-location-dot"></i>{{i.location}}
+            </p>
+            <p class="card-text">
+                {{i.style}}
+            </p>
+            <p class="text-danger text-center">
+                {{i.status==1?"Booking Continue...":"Booking closed"}}
+            </p>    
+        </div>
+    </div>
+</div>
